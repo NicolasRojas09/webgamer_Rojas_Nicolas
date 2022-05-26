@@ -48,10 +48,22 @@ body{
     border-bottom: solid black 2px;
 }
 .news1, .news2, .news3, .news4{
-    display: inline-block;
-    margin: 10px 30px;
+    margin: 10px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.news__text{
     color: white;
     text-align: center;
+    position: absolute;
+    transition: all 0.3s;
+    transform: scale(1.5);
+    opacity: 0;
+}
+.news__text:hover{
+    transform: scale(1);
+    opacity: 1;
 }
 .recentGames h2{
     color: rgb(81, 81, 173);
@@ -63,6 +75,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.img_valorant, .img_csgo, .img_codw{
+    transform: scalex(1);
+    transition: all 0.3s;  
+}
+.img_valorant:hover, .img_csgo:hover, .img_codw:hover{
+    transform: scale(1.2);
     
 }
 .yearsGames__img{
@@ -384,9 +403,13 @@ body{
 }
 header{
     grid-area: header;
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(75,75,75,1) 24%, rgba(75,75,75,1) 100%, rgba(46,46,46,1) 100%);
 }
 main{
     grid-area: main;
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(75,75,75,1) 12%, rgba(75,75,75,1) 100%, rgba(46,46,46,1) 100%);
 }
 footer{
     grid-area: footer;
@@ -407,6 +430,15 @@ footer{
             /*media querie index (inicio)*/
     .news1, .news2, .news3, .news4{
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .news__text{
+        color: white;
+        text-align: center;
+        transform: scale(1);
+        opacity: 1;
     }
     .recentNews p{
         display: none;
