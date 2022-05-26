@@ -181,6 +181,12 @@ body{
     color: rgb(34, 136, 177);
     padding: 10px;
 }
+.news_1, .news_2, .news_3, .news_4{
+    display: inline-block;
+    margin: 10px 30px;
+    color: white;
+    text-align: center
+}
 .newsMonth1, .newsMonth2, .newsMonth3, .newsMonth4, .newsMonth5{
     display: inline-block;
     margin: 10px 30px;
@@ -254,15 +260,15 @@ body{
     padding: 10px;
 }
 .gamesRev h3{
-    padding-left: 10px;
     padding-bottom: 5px;
     color: white;
+    text-align: center;
 }
 .gamesRev h4, .gamesRev p{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 5px;
-    color: rosybrown;
+    color: white;
 }
 .gamesRev{
     display: grid;
@@ -278,83 +284,181 @@ body{
 .gamesRev_b1{
     grid-area: b1;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_codw{
     grid-area: codw;
     border-bottom: solid black 4px;
     border-right: solid black 2px;
     border-left: solid black 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_codbo2{
     grid-area: codbo2;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_codmw{
     grid-area: codmw;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_csgo{
     grid-area: csgo;
     border-bottom: solid black 4px;
     border-right: solid black 2px;
     border-left: solid black 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_eldenring{
     grid-area: eldenring;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_farcry6{
     grid-area: farcry6;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_gtav{
     grid-area: gtav;
     border-bottom: solid black 4px;
     border-right: solid black 2px;
     border-left: solid black 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_zelda{
     grid-area: zelda;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_lostark{
     grid-area: lostark;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_mgs3{
     grid-area: mgs3;
     border-bottom: solid black 4px;
     border-right: solid black 2px;
     border-left: solid black 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_minecraft{
     grid-area: minecraft;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_rainbow{
     grid-area: rainbow;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_rdr2{
     grid-area: rdr2;
     border-bottom: solid black 4px;
     border-right: solid black 2px;
     border-left: solid black 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_uncharted4{
     grid-area: uncharted4;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_valorant{
     grid-area: valorant;
     border-bottom: solid black 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .gamesRev_witcher{
     grid-area: witcher;
     border-bottom: solid black 4px;
     border-right: solid black 2px;
     border-left: solid black 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.gamesRev__text{ /*tensicion*/
+    text-align: center;
+    position: absolute;
+    transform: scale(1.5);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.gamesRev__text:hover{
+    transform: scale(0.9);
+    opacity: 1;
+    background: rgba(73, 73, 73, 0.813);
+}
+
                            /*reviews (fin)*/
 .faqh2{                     /*FAQ (inicio)*/
     color: yellow;
@@ -490,6 +594,11 @@ footer{
     }
     .gamesRev img, .gamesRev h3, .gamesRev p{
         padding: 10px;
+    }
+    .gamesRev__text{
+        opacity: 1;
+        position: relative;
+        transform: scale(1);
     }
             /*media querie reviews (fin)*/
 }
