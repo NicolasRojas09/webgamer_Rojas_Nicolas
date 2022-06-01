@@ -5,11 +5,6 @@
 }
 body{
     background-color: rgb(74, 74, 74);
-    background-image: url(../imagenes/joystick.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position-x: 50%;
-    background-position-y: 220px;
 }                       
 .headerh1{                  /*header en comun de todas la paginas (inicio)*/
     color: rgb(0, 255, 0);
@@ -41,7 +36,7 @@ body{
     border-bottom: solid black 2px;
 }
 .news1, .news2, .news3, .news4{
-    margin: 10px 30px;
+    margin: 10px 40px;
     position: relative;
     display: flex;
     align-items: center;
@@ -551,14 +546,9 @@ footer{
     .recentGames{
         border-bottom: solid black 4px;
     }
-    .gamesTable td{
-        padding: 10px;
-    }
-    .gamesTable li{
-        list-style: none;
-    }
-    .gamesTable{
-        padding-left: 5px;
+    .recentGames img{
+        width: 90px;  
+        height: 137px;
     }
     .tdCopiesSold{
         display: none;
