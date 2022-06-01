@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,36 @@
 </head>
 <body>
     <header>
-        <img src="./imagenes/geek_code_logo (1).png" alt="logo" class="headerlogo">
-        <h1 class="headerh1">GeekCode</h1>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li><a href="./index.html">| Home |</a></li> <!--pagina pricipal-->
-                <li><a href="./vistas/news.html">| News |</a></li> <!--pagina de noticias-->
-                <li><a href="./vistas/games.html">| Games |</a></li> <!--pagina de juegos-->
-                <li><a href="./vistas/reviews.html">| Reviews |</a></li> <!--pagina de reseñas-->
-                <li><a href="./vistas/contact.html">| Contact |</a></li> <!--pagina de contacto-->
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="logoH1">
+                    <img src="./imagenes/geek_code_logo (1).png" alt="logo" class="headerlogo">
+                    <h1 class="headerh1">GeekCode</h1>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end menu__list" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./vistas/news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./vistas/games.html">Games</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./vistas/reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./vistas/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <div class="home">
@@ -78,46 +98,26 @@
                         <img width="139" height="186" src="./imagenes/games/minecraft.png" alt="minecraft">
                     </p>
                 </div>
-                <section class="gamesTable"> 
-                    <table border="1" cellsapacing="10" cellpadding="8"> <!--tabla coparativa de juegos-->
-                        <tr>
-                            <th>Name</th>
-                            <th>Release date</th>
-                            <th>Platforms</th>
-                            <th class="tdCopiesSold">Copies sold</th>
-                        </tr>
-                        <tr>
-                            <td>Minecraft</td>
-                            <td>November 18, 2011</td>
-                            <td>
-                                <ul>
-                                    <li>Pc</li>
-                                    <li>Mobile</li>
-                                    <li>Xbox</li>
-                                    <li>PlayStation</li>
-                                    <li>Nintendo Switch</li>
-                                </ul>
-                            </td>
-                            <td class="tdCopiesSold">over 200 million units</td>
-                        </tr>
-                        <tr>
-                            <td>The Witcher 3: Wild Hunt</td>
-                            <td>May 18, 2015</td>
-                            <td>
-                                <ul>
-                                    <li>Pc</li>
-                                    <li>Xbox</li>
-                                    <li>PlayStation</li>
-                                    <li>Nintendo Switch</li>
-                                </ul>
-                            </td>
-                            <td class="tdCopiesSold">over 28 million units</td>
-                        </tr>
-                    </table>
-                </section>
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                      <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1DhWXAiNgfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
-        <hr>
     </main>
     <footer>
         <p class="footerMenu">
@@ -127,5 +127,6 @@
             maps: The Moon 2442 | © 2022
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

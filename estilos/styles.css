@@ -10,7 +10,7 @@ body{
     background-size: 300px;
     background-position-x: 50%;
     background-position-y: 220px;
-}                           
+}                       
 .headerh1{                  /*header en comun de todas la paginas (inicio)*/
     color: rgb(0, 255, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -19,7 +19,6 @@ body{
     font-style: italic;
 }
 .headerh1, .headerlogo{
-    display: inline-block;
     padding-inline-start: 10px;
     padding-top: 10px;
 }
@@ -27,20 +26,14 @@ body{
     width: 150px;
     height: 150px;
 }
-.menu{
-    border-top: solid 5px black;
-    border-bottom: solid 5px black;
-}
-.menu__list{
-    list-style: none;
-    padding: 5px 10px;
-}
-.menu__list li{
-    display: inline-block;
+.logoH1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
 }
 .menu__list a{
     color: greenyellow;
-    text-decoration: none;
 }                           /*header en comun de todas la paginas (fin)*/
 .h2news{                    /*index (inicio)*/
     color: rgb(50, 175, 175);
@@ -85,29 +78,20 @@ body{
     
 }
 .yearsGames__img{
-    padding: 10px 0px 10px 20px;
+    padding: 10px;
 }
 .yearsGames h2{
     color: rgb(163, 104, 163);
     padding: 10px;
     border-bottom: solid black 2px;
 }
-.gamesTable th{
-    color: rgb(246, 162, 243);
-}
-.gamesTable td{
-    color: white;
-    padding: 20px;
-}
-.gamesTable{
-    padding: 0px 0px 10px 20px; 
-}
 .home{
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-areas: "news yearsGamesp"
                          "recentGames yearsGamesp";
+    margin-bottom: 10px;
 }
 .recentNews{
     grid-area: news;
@@ -124,13 +108,20 @@ body{
 .recentGames{
     grid-area: recentGames;
     border-right: solid black 4px;
+    border-bottom: solid black 4px;
 }
 .yearsGamesP{
     grid-area: yearsGamesp;
-}                           /*index (fin)*/
+    border-bottom: solid black 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+                            /*index (fin)*/
 .footerMenu{                /*footer en comun para todas la paginas (inicio)*/
     padding: 10px;
-    
+    padding-top: 0px;
 }
 .footerMenu a, .footerMenu{
     color: white;
@@ -139,6 +130,7 @@ body{
 .h2Contact{                 /*contact (inicio)*/
     color: rgb(147, 137, 200);
     padding: 10px;
+    padding-bottom: 0px;
 }
 .contactForm{
     color: white;
@@ -149,15 +141,15 @@ body{
     margin-bottom: 2px;
 }
 .lastName{
-    margin-left: 12px;
+    margin-left: 11px;
     margin-bottom: 2px;
 }
 .userMail{
-    margin-left: 48px;
+    margin-left: 52px;
     margin-bottom: 2px;
 }
 .userGame{
-    margin-left: 40px;
+    margin-left: 41px;
     margin-bottom: 2px;
 }
 .aboutGame{
@@ -183,13 +175,13 @@ body{
 }
 .news_1, .news_2, .news_3, .news_4{
     display: inline-block;
-    margin: 10px 30px;
+    margin: 10px 20px;
     color: white;
     text-align: center
 }
 .newsMonth1, .newsMonth2, .newsMonth3, .newsMonth4, .newsMonth5{
     display: inline-block;
-    margin: 10px 30px;
+    margin: 10px 20px;
     color: white;
     text-align: center;
 }
@@ -199,7 +191,7 @@ body{
 }
 .newsYear1, .newsYear2, .newsYear3, .newsYear4, .newsYear5{
     display: inline-block;
-    margin: 10px 30px;
+    margin: 10px 20px;
     color: white;
     text-align: center;
 }
@@ -213,16 +205,9 @@ body{
 .topGames4 img, .topGames5 img, .topGames6 img, .topGames7 img{
     width: 139px;
     height: 186px;
-    padding: 10px;
 }
-.topGames1, .topGames2, .topGames3, 
-.topGames4, .topGames5, .topGames6, .topGames7{
-    display: inline-block;
-    color: white;
-    text-align: center;
-}
-.topGames{
-    padding-bottom: 10px;
+.topGames__img{
+    object-fit: contain;
 }
 .allGamesh2{
     color: rgb(58, 141, 58);
@@ -446,15 +431,20 @@ body{
     align-items: center;
     justify-content: center;
 }
+.gamesRev__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
 .gamesRev__text{ /*tensicion*/
     text-align: center;
     position: absolute;
-    transform: scale(1.5);
     opacity: 0;
+    transform: scale(0.5);
     transition: all 0.3s;
 }
 .gamesRev__text:hover{
-    transform: scale(0.9);
+    transform: scale(0.6);
     opacity: 1;
     background: rgba(73, 73, 73, 0.813);
 }
@@ -463,6 +453,7 @@ body{
 .faqh2{                     /*FAQ (inicio)*/
     color: yellow;
     padding: 10px;
+    padding-bottom: 0px;
 }
 .faq{
     color: rgb(255, 255, 169);
@@ -478,24 +469,34 @@ body{
 }                           /*FAQ (fin)*/
 .followh2{                  /*follow (inicio)*/
     color: rgb(64, 224, 160);
-    padding: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 .follow__main{
     color: rgb(40, 255, 136);
-    padding: 10px;
+    text-align: center;
 }
-.follow__second{
+.follow__second h3{
     color: rgb(15, 176, 88);
-    padding: 10px;
+    text-align: center;
 }
 .follow img{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    width: 95px;
+    height: 95px;
+    padding: 5px;
+}
+.follow h3{
+    margin-bottom: 0px;
 }
 .follow a{
     text-decoration: none;
-}                           /*follow (fin)*/
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+                           /*follow (fin)*/
                             /*grid en comun (inicio)*/
 body{
     display: grid;
@@ -570,7 +571,43 @@ footer{
                          "recentGames" 
                          "yearsGamesp";
     }
+    .yearsGamesP iframe{
+        width: auto;
+        height: auto;
+    }
             /*media querie index (fin)*/
+            /*media querie reviews (inicio)*/
+    .gamesRev{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "b1" "codw" "codbo2"
+                             "codmw" "csgo" "eldenring"
+                             "farcry6" "gtav" "zelda"
+                             "lostark" "mgs3" "minecraft"
+                             "rainbow" "rdr2" "uncharted4"
+                             "valorant" "witcher" "none";
+    }
+    .gamesRev div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid black 4px;
+        border-right: none;
+        border-left: none;
+    }
+    .gamesRev img, .gamesRev h3, .gamesRev p{
+        padding: 10px;
+    }
+    .gamesRev__text{
+        opacity: 1;
+        position: relative;
+        transform: scale(1);
+    }
+            /*media querie reviews (fin)*/
+}
+@media screen and (min-width: 481px) and (max-width: 991px){ /*tablet*/
             /*media querie reviews (inicio)*/
     .gamesRev{
         display: grid;
