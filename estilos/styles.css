@@ -80,6 +80,10 @@ body{
     padding: 10px;
     border-bottom: solid black 2px;
 }
+.video{
+    width: 560px;
+    height: 315px;
+}
 .home{
     display: grid;
     grid-template-rows: 1fr auto;
@@ -163,10 +167,12 @@ body{
 .newsWeek{                  /*news (inicio)*/
     color: rgb(79, 198, 198);
     padding: 10px;
+    text-align: center;
 }
 .newsMonth{
     color: rgb(34, 136, 177);
     padding: 10px;
+    text-align: center;
 }
 .news_1, .news_2, .news_3, .news_4{
     display: inline-block;
@@ -183,6 +189,7 @@ body{
 .newsYear{
     color: rgb(40, 86, 185);
     padding: 10px;
+    text-align: center;
 }
 .newsYear1, .newsYear2, .newsYear3, .newsYear4, .newsYear5{
     display: inline-block;
