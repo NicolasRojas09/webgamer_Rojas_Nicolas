@@ -1,0 +1,30 @@
+.followh2{                  /*follow (inicio)*/
+    color: rgb(64, 224, 160);
+    text-align: center;
+    padding-top: 10px;
+}
+.follow__main{
+    color: rgb(40, 255, 136);
+    text-align: center;
+}
+.follow__second h3{
+    color: rgb(15, 176, 88);
+    text-align: center;
+}
+.follow img{
+    width: 95px;
+    height: 95px;
+    padding: 5px;
+}
+.follow h3{
+    margin-bottom: 0px;
+}
+.follow a{
+    text-decoration: none;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+                           /*follow (fin)*/

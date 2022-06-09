@@ -1,0 +1,37 @@
+.topGamesh2{                /*games (inicio)*/
+    color: rgb(78, 182, 78);
+    padding: 10px;
+}
+.topGames1 img, .topGames2 img, .topGames3 img, 
+.topGames4 img, .topGames5 img, .topGames6 img, .topGames7 img{
+    width: 139px;
+    height: 186px;
+}
+.topGames__img{
+    object-fit: contain;
+}
+.allGamesh2{
+    color: rgb(58, 141, 58);
+    padding: 10px;
+}
+.allGames1 img, .allGames2 img, .allGames3 img, .allGames4 img, 
+.allGames5 img, .allGames6 img, .allGames7 img, .allGames8 img, 
+.allGames9 img, .allGames10 img, .allGames11 img, .allGames12 img, 
+.allGames13 img, .allGames14 img, .allGames15 img, .allGames16 img, 
+.allGames17 img{
+    width: 139px;
+    height: 186px;
+    padding: 10px;
+}
+.allGames1, .allGames2, .allGames3, .allGames4, 
+.allGames5, .allGames6, .allGames7, .allGames8, 
+.allGames9, .allGames10, .allGames11, .allGames12, 
+.allGames13, .allGames14, .allGames15, .allGames16, 
+.allGames17{
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+.allGames{
+    padding-bottom: 10px;
+}                           /*games (fin)*/
