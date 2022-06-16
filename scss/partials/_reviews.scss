@@ -3,10 +3,13 @@
     padding: 10px;
     border-bottom: solid black 4px;
 }
+@mixin sizeGames($width,$height,$padding) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+}
 .gamesRev img{
-    width: 139px;
-    height: 186px;
-    padding: 10px;
+    @include sizeGames(139px,186px,10px);
 }
 .gamesRev h3{
     padding-bottom: 5px;

@@ -21,11 +21,14 @@
 .faq .accordion-item {
     color: rgb(255, 255, 169);
 }
-.faq p, .faq h3{
-    padding: 10px;
-}
-.faq p{
-    padding-left: 40px;
+.faq{
+    p{
+        padding: 10px;
+        padding-left: 40px;
+    }
+    h3{
+        padding: 10px;
+    }
 }
 .hrfaq{
     width: 250px;

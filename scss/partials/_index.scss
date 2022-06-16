@@ -52,6 +52,9 @@
     width: 560px;
     height: 315px;
 }
+$bordeN: (
+    Bblack: solid black 4px,
+);
 .home{
     display: grid;
     grid-template-rows: 1fr auto;
@@ -62,8 +65,8 @@
 }
 .recentNews{
     grid-area: news;
-    border-right: solid black 4px;
-    border-bottom: solid black 4px;
+    border-right: map-get($bordeN, Bblack);
+    border-bottom: map-get($bordeN, Bblack);
 }
 .recentNews__news{
     display: flex;
@@ -74,12 +77,12 @@
 }
 .recentGames{
     grid-area: recentGames;
-    border-right: solid black 4px;
-    border-bottom: solid black 4px;
+    border-right: map-get($bordeN, Bblack);
+    border-bottom: map-get($bordeN, Bblack);
 }
 .yearsGamesP{
     grid-area: yearsGamesp;
-    border-bottom: solid black 4px;
+    border-bottom: map-get($bordeN, Bblack);
     display: flex;
     flex-direction: column;
     align-items: center;

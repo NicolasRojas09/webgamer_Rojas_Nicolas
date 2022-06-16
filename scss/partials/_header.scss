@@ -2,12 +2,17 @@
 body{
     background-color: rgb(74, 74, 74);
 }
+$textoHeader: (
+    color: rgb(0, 255, 0),
+    fuenteT: 70px,
+    estiloF: italic,
+);
 .headerh1{
-    color: rgb(0, 255, 0);
+    color: map-get($textoHeader, color);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 70px;
+    font-size: map-get($textoHeader, fuenteT);
     margin-block-end: 0px;
-    font-style: italic;
+    font-style: map-get($textoHeader, estiloF);
 }
 .headerh1, .headerlogo{
     padding-inline-start: 10px;
