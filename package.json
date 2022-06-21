@@ -1,7 +1,7 @@
 {
   "name": "raiz",
   "version": "1.0.0",
-  "description": "paquete de sass",
+  "description": "Esta paguina trata de dar informacion del mundo de los videojuegos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

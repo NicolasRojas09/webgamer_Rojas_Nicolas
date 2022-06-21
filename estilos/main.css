@@ -57,6 +57,10 @@ footer {
   display: flex;
   align-items: center; }
 
+.news_img {
+  width: 132px;
+  height: 132px; }
+
 .news__text {
   /*transicion*/
   color: white;
@@ -68,7 +72,8 @@ footer {
 
 .news__text:hover {
   transform: scale(1);
-  opacity: 1; }
+  opacity: 1;
+  background: rgba(73, 73, 73, 0.813); }
 
 .recentGames h2 {
   color: #5151ad;
@@ -558,7 +563,8 @@ footer {
     color: white;
     text-align: center;
     transform: scale(1);
-    opacity: 1; }
+    opacity: 1;
+    background: rgba(73, 73, 73, 0.813); }
   .recentNews p {
     display: none; }
   .recentGames {
