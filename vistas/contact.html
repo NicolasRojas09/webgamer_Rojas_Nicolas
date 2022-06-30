@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/main.css">
     <title>Contact</title>
-    <meta name="description" content="Contact page">
+    <meta name="description" content="We provide this page so you can contact us">
     <meta name="keywords" content="contact, user, mail, question">
 </head>
 <body>
@@ -47,41 +47,38 @@
         <h2 class="h2Contact">Contact Us</h2>
         <hr class="hrcontact">
         <form class="contactForm" action="" method="get" enctype="text/plain"><!--formulario completo de contacto-->
-            <div>
-                <label for="username">Name:</label>
-                <input class="userName" type="text" name="username" id="username" placeholder="Name">
+            <div class="input-group mb-2">
+                <span class="input-group-text colorformname" id="inputGroup-sizing-default">Name</span>
+                <input type="text" class="form-control colorforminput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div>
-                <label for="lastname">Last name:</label>
-                <input class="lastName" type="text" name="userlastname" id="lastname" placeholder="Last name">
+            <div class="input-group mb-2">
+              <span class="input-group-text colorformname" id="inputGroup-sizing-default">Last Name</span>
+              <input type="text" class="form-control colorforminput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div>
-                <label for="usermail">Mail:</label>
-                <input class="userMail" type="email" name="mail" id="usermail">
+            <div class="input-group mb-2">
+              <span class="input-group-text colorformname" id="inputGroup-sizing-default">Mail</span>
+              <input type="email" class="form-control colorforminput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div>
-                <label for="usergame">Game:</label>
-                <select class="userGame" name="game" id="usergame">
-                    <option value="valorant">Valorant</option>
-                    <option value="cs_go">Cs go</option>
-                    <option value="call_of_duty">Call Of Duty</option>
-                    <option value="witcher">The Witcher</option>
-                    <option value="minecraft">Minecraft</option>
-                </select>
+            <div class="d-flex flex-row justify-content-between mb-2">
+              <div class="form-check">
+                <input class="form-check-input colorforminput" type="checkbox" value="0" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Game
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input colorforminput" type="checkbox" value="1" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Community
+                </label>
             </div>
-            <div>
-                <label for="about">About:</label>
-                <input class="aboutGame" type="checkbox" name="game" id="about" value="0">Game
-                <input class="aboutCommunity" type="checkbox" name="community" id="about" value="1">Community
             </div>
-            <div>
-                <label for="question">Your Question:</label><br>
-                <textarea name="userquestion" id="question" cols="30" rows="10"></textarea>
+            <div class="form-floating mb-2">
+              <textarea class="form-control colorforminput" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2" class="text-dark">Your Question</label>
             </div>
-            <div>
-                <input type="submit" value="send">
-                <input type="reset" value="reset form">
-            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
         </form>
     </main>
     <footer>

@@ -1,11 +1,9 @@
 .footerMenu{                /*footer en comun para todas la paginas (inicio)*/
-    padding: 10px;
-    padding-top: 0px;
-}
-.footerMenu a, .footerMenu{
+    text-align: center;
     color: white;
-    text-decoration: none;
-}
-footer{
-    background-color: rgb(74, 74, 74);
-}                          /*footer en comun para todas la paginas (fin)*/
+    padding: 10px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}                         /*footer en comun para todas la paginas (fin)*/
